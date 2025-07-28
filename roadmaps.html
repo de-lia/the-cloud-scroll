@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS Learning Roadmaps - The Cloud Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="roadmaps.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="logo-cloud">☁️</span>
+                        <span class="logo-scroll">📜</span>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">The Cloud Scroll</span>
+                        <span class="logo-sub">AWS Learning</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dictionary.html" class="nav-link">Dictionary</a>
+                </li>
+                <li class="nav-item">
+                    <a href="flashcards.html" class="nav-link">FlashCards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html" class="nav-link">Quiz</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmaps.html" class="nav-link active">Roadmaps</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <h1>AWS Learning Roadmaps</h1>
+            <p>Interactive visual guides to master AWS step by step</p>
+        </header>
+
+        <!-- Roadmap Selection Tabs -->
+        <div class="roadmap-tabs">
+            <button class="tab-btn active" data-roadmap="beginner">
+                <span class="tab-icon">🚀</span>
+                <span class="tab-text">Beginner</span>
+            </button>
+            <button class="tab-btn" data-roadmap="solutions-architect">
+                <span class="tab-icon">🏗️</span>
+                <span class="tab-text">Solutions Architect</span>
+            </button>
+            <button class="tab-btn" data-roadmap="developer">
+                <span class="tab-icon">💻</span>
+                <span class="tab-text">Developer</span>
+            </button>
+            <button class="tab-btn" data-roadmap="devops">
+                <span class="tab-icon">⚙️</span>
+                <span class="tab-text">DevOps</span>
+            </button>
+        </div>
+
+        <!-- Beginner Roadmap -->
+        <div class="roadmap-container active" id="beginner-roadmap">
+            <div class="roadmap-header">
+                <h2>🚀 AWS Beginner Roadmap</h2>
+                <p>Start your cloud journey with these essential AWS services</p>
+            </div>
+
+            <div class="roadmap-visual">
+                <!-- Start Node -->
+                <div class="roadmap-node start-node" data-topic="start">
+                    <div class="node-content">
+                        <span class="node-icon">🎯</span>
+                        <span class="node-title">Start Here</span>
+                    </div>
+                </div>
+
+                <!-- Foundation Layer -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Foundation</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="cloud-basics">
+                            <div class="node-content">
+                                <span class="node-icon">☁️</span>
+                                <span class="node-title">Cloud Basics</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="aws-console">
+                            <div class="node-content">
+                                <span class="node-icon">🖥️</span>
+                                <span class="node-title">AWS Console</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="regions-azs">
+                            <div class="node-content">
+                                <span class="node-icon">🌍</span>
+                                <span class="node-title">Regions & AZs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Core Services Layer -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Core Services</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="ec2">
+                            <div class="node-content">
+                                <span class="node-icon">💻</span>
+                                <span class="node-title">EC2</span>
+                                <span class="node-subtitle">Virtual Servers</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="s3">
+                            <div class="node-content">
+                                <span class="node-icon">💾</span>
+                                <span class="node-title">S3</span>
+                                <span class="node-subtitle">Object Storage</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="iam">
+                            <div class="node-content">
+                                <span class="node-icon">🔐</span>
+                                <span class="node-title">IAM</span>
+                                <span class="node-subtitle">Security</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Layer -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Database</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="rds">
+                            <div class="node-content">
+                                <span class="node-icon">🗄️</span>
+                                <span class="node-title">RDS</span>
+                                <span class="node-subtitle">Relational DB</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="dynamodb">
+                            <div class="node-content">
+                                <span class="node-icon">⚡</span>
+                                <span class="node-title">DynamoDB</span>
+                                <span class="node-subtitle">NoSQL DB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Networking Layer -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Networking</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="vpc">
+                            <div class="node-content">
+                                <span class="node-icon">🌐</span>
+                                <span class="node-title">VPC</span>
+                                <span class="node-subtitle">Virtual Network</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="cloudfront">
+                            <div class="node-content">
+                                <span class="node-icon">🚀</span>
+                                <span class="node-title">CloudFront</span>
+                                <span class="node-subtitle">CDN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serverless Layer -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Serverless</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="lambda">
+                            <div class="node-content">
+                                <span class="node-icon">⚡</span>
+                                <span class="node-title">Lambda</span>
+                                <span class="node-subtitle">Functions</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="api-gateway">
+                            <div class="node-content">
+                                <span class="node-icon">🔗</span>
+                                <span class="node-title">API Gateway</span>
+                                <span class="node-subtitle">REST APIs</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring Layer -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Monitoring</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="cloudwatch">
+                            <div class="node-content">
+                                <span class="node-icon">📊</span>
+                                <span class="node-title">CloudWatch</span>
+                                <span class="node-subtitle">Monitoring</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Next Steps -->
+                <div class="roadmap-node next-node" data-topic="next-steps">
+                    <div class="node-content">
+                        <span class="node-icon">🎓</span>
+                        <span class="node-title">Choose Specialization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Solutions Architect Roadmap -->
+        <div class="roadmap-container" id="solutions-architect-roadmap">
+            <div class="roadmap-header">
+                <h2>🏗️ Solutions Architect Roadmap</h2>
+                <p>Design scalable, reliable, and cost-effective AWS architectures</p>
+            </div>
+
+            <div class="roadmap-visual">
+                <!-- Prerequisites -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Prerequisites</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node prerequisite" data-topic="beginner-complete">
+                            <div class="node-content">
+                                <span class="node-icon">✅</span>
+                                <span class="node-title">Complete Beginner Path</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Architecture Principles -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Architecture Principles</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="well-architected">
+                            <div class="node-content">
+                                <span class="node-icon">🏛️</span>
+                                <span class="node-title">Well-Architected</span>
+                                <span class="node-subtitle">6 Pillars</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="design-patterns">
+                            <div class="node-content">
+                                <span class="node-icon">📐</span>
+                                <span class="node-title">Design Patterns</span>
+                                <span class="node-subtitle">Best Practices</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Compute -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Advanced Compute</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="auto-scaling">
+                            <div class="node-content">
+                                <span class="node-icon">📈</span>
+                                <span class="node-title">Auto Scaling</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="load-balancers">
+                            <div class="node-content">
+                                <span class="node-icon">⚖️</span>
+                                <span class="node-title">Load Balancers</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="containers">
+                            <div class="node-content">
+                                <span class="node-icon">📦</span>
+                                <span class="node-title">ECS/EKS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Networking -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Advanced Networking</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="vpc-advanced">
+                            <div class="node-content">
+                                <span class="node-icon">🌐</span>
+                                <span class="node-title">Advanced VPC</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="direct-connect">
+                            <div class="node-content">
+                                <span class="node-icon">🔌</span>
+                                <span class="node-title">Direct Connect</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="route53">
+                            <div class="node-content">
+                                <span class="node-icon">🌍</span>
+                                <span class="node-title">Route 53</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data & Analytics -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Data & Analytics</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="redshift">
+                            <div class="node-content">
+                                <span class="node-icon">🏭</span>
+                                <span class="node-title">Redshift</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="kinesis">
+                            <div class="node-content">
+                                <span class="node-icon">🌊</span>
+                                <span class="node-title">Kinesis</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="athena">
+                            <div class="node-content">
+                                <span class="node-icon">🔍</span>
+                                <span class="node-title">Athena</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification -->
+                <div class="roadmap-node certification-node" data-topic="saa-cert">
+                    <div class="node-content">
+                        <span class="node-icon">🏆</span>
+                        <span class="node-title">Solutions Architect Associate</span>
+                        <span class="node-subtitle">AWS Certification</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Developer Roadmap -->
+        <div class="roadmap-container" id="developer-roadmap">
+            <div class="roadmap-header">
+                <h2>💻 Developer Roadmap</h2>
+                <p>Build and deploy applications on AWS</p>
+            </div>
+
+            <div class="roadmap-visual">
+                <!-- Prerequisites -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Prerequisites</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node prerequisite" data-topic="beginner-complete">
+                            <div class="node-content">
+                                <span class="node-icon">✅</span>
+                                <span class="node-title">Complete Beginner Path</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node prerequisite" data-topic="programming-basics">
+                            <div class="node-content">
+                                <span class="node-icon">👨‍💻</span>
+                                <span class="node-title">Programming Skills</span>
+                                <span class="node-subtitle">Python/Node.js/Java</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Development Environment -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Development Environment</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="aws-cli">
+                            <div class="node-content">
+                                <span class="node-icon">⌨️</span>
+                                <span class="node-title">AWS CLI</span>
+                                <span class="node-subtitle">Command Line</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="aws-sdk">
+                            <div class="node-content">
+                                <span class="node-icon">📦</span>
+                                <span class="node-title">AWS SDKs</span>
+                                <span class="node-subtitle">Code Libraries</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="cloud9">
+                            <div class="node-content">
+                                <span class="node-icon">☁️</span>
+                                <span class="node-title">Cloud9</span>
+                                <span class="node-subtitle">Cloud IDE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Serverless Development -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Serverless Development</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="lambda-advanced">
+                            <div class="node-content">
+                                <span class="node-icon">⚡</span>
+                                <span class="node-title">Lambda Functions</span>
+                                <span class="node-subtitle">Advanced</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="api-gateway-dev">
+                            <div class="node-content">
+                                <span class="node-icon">🔗</span>
+                                <span class="node-title">API Gateway</span>
+                                <span class="node-subtitle">REST & GraphQL</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="sam">
+                            <div class="node-content">
+                                <span class="node-icon">🏗️</span>
+                                <span class="node-title">SAM</span>
+                                <span class="node-subtitle">Serverless Framework</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Development -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Database Development</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="dynamodb-dev">
+                            <div class="node-content">
+                                <span class="node-icon">⚡</span>
+                                <span class="node-title">DynamoDB</span>
+                                <span class="node-subtitle">NoSQL Patterns</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="rds-dev">
+                            <div class="node-content">
+                                <span class="node-icon">🗄️</span>
+                                <span class="node-title">RDS</span>
+                                <span class="node-subtitle">SQL Development</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="elasticache-dev">
+                            <div class="node-content">
+                                <span class="node-icon">🚀</span>
+                                <span class="node-title">ElastiCache</span>
+                                <span class="node-subtitle">Caching</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Application Integration -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Application Integration</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="sqs">
+                            <div class="node-content">
+                                <span class="node-icon">📬</span>
+                                <span class="node-title">SQS</span>
+                                <span class="node-subtitle">Message Queues</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="sns">
+                            <div class="node-content">
+                                <span class="node-icon">📢</span>
+                                <span class="node-title">SNS</span>
+                                <span class="node-subtitle">Notifications</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="eventbridge">
+                            <div class="node-content">
+                                <span class="node-icon">🔄</span>
+                                <span class="node-title">EventBridge</span>
+                                <span class="node-subtitle">Event Bus</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage & Content -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Storage & Content</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="s3-dev">
+                            <div class="node-content">
+                                <span class="node-icon">💾</span>
+                                <span class="node-title">S3</span>
+                                <span class="node-subtitle">Advanced Features</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="cloudfront-dev">
+                            <div class="node-content">
+                                <span class="node-icon">🌐</span>
+                                <span class="node-title">CloudFront</span>
+                                <span class="node-subtitle">CDN & Edge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Authentication & Security -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Authentication & Security</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="cognito">
+                            <div class="node-content">
+                                <span class="node-icon">👤</span>
+                                <span class="node-title">Cognito</span>
+                                <span class="node-subtitle">User Management</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="secrets-manager">
+                            <div class="node-content">
+                                <span class="node-icon">🔐</span>
+                                <span class="node-title">Secrets Manager</span>
+                                <span class="node-subtitle">API Keys & Secrets</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Debugging -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Monitoring & Debugging</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="cloudwatch-dev">
+                            <div class="node-content">
+                                <span class="node-icon">📊</span>
+                                <span class="node-title">CloudWatch</span>
+                                <span class="node-subtitle">Logs & Metrics</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="xray">
+                            <div class="node-content">
+                                <span class="node-icon">🔍</span>
+                                <span class="node-title">X-Ray</span>
+                                <span class="node-subtitle">Distributed Tracing</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Deployment & CI/CD -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Deployment & CI/CD</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="codecommit">
+                            <div class="node-content">
+                                <span class="node-icon">📝</span>
+                                <span class="node-title">CodeCommit</span>
+                                <span class="node-subtitle">Git Repository</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="codebuild">
+                            <div class="node-content">
+                                <span class="node-icon">🔨</span>
+                                <span class="node-title">CodeBuild</span>
+                                <span class="node-subtitle">Build Service</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="codedeploy">
+                            <div class="node-content">
+                                <span class="node-icon">🚀</span>
+                                <span class="node-title">CodeDeploy</span>
+                                <span class="node-subtitle">Deployment</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="codepipeline">
+                            <div class="node-content">
+                                <span class="node-icon">🔄</span>
+                                <span class="node-title">CodePipeline</span>
+                                <span class="node-subtitle">CI/CD Pipeline</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification -->
+                <div class="roadmap-node certification-node" data-topic="dva-cert">
+                    <div class="node-content">
+                        <span class="node-icon">🏆</span>
+                        <span class="node-title">Developer Associate</span>
+                        <span class="node-subtitle">AWS Certification</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- DevOps Roadmap -->
+        <div class="roadmap-container" id="devops-roadmap">
+            <div class="roadmap-header">
+                <h2>⚙️ DevOps Roadmap</h2>
+                <p>Automate, monitor, and optimize AWS infrastructure</p>
+            </div>
+
+            <div class="roadmap-visual">
+                <!-- Prerequisites -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Prerequisites</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node prerequisite" data-topic="beginner-complete">
+                            <div class="node-content">
+                                <span class="node-icon">✅</span>
+                                <span class="node-title">Complete Beginner Path</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node prerequisite" data-topic="linux-basics">
+                            <div class="node-content">
+                                <span class="node-icon">🐧</span>
+                                <span class="node-title">Linux/Unix</span>
+                                <span class="node-subtitle">Command Line</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node prerequisite" data-topic="scripting">
+                            <div class="node-content">
+                                <span class="node-icon">📜</span>
+                                <span class="node-title">Scripting</span>
+                                <span class="node-subtitle">Bash/Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Infrastructure as Code -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Infrastructure as Code</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="cloudformation">
+                            <div class="node-content">
+                                <span class="node-icon">📜</span>
+                                <span class="node-title">CloudFormation</span>
+                                <span class="node-subtitle">AWS Native IaC</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="terraform">
+                            <div class="node-content">
+                                <span class="node-icon">🏗️</span>
+                                <span class="node-title">Terraform</span>
+                                <span class="node-subtitle">Multi-Cloud IaC</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="cdk">
+                            <div class="node-content">
+                                <span class="node-icon">⚡</span>
+                                <span class="node-title">AWS CDK</span>
+                                <span class="node-subtitle">Code-based IaC</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Configuration Management -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Configuration Management</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="systems-manager">
+                            <div class="node-content">
+                                <span class="node-icon">🔧</span>
+                                <span class="node-title">Systems Manager</span>
+                                <span class="node-subtitle">AWS Native</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="ansible">
+                            <div class="node-content">
+                                <span class="node-icon">📋</span>
+                                <span class="node-title">Ansible</span>
+                                <span class="node-subtitle">Automation</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="chef-puppet">
+                            <div class="node-content">
+                                <span class="node-icon">👨‍🍳</span>
+                                <span class="node-title">Chef/Puppet</span>
+                                <span class="node-subtitle">Config Tools</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CI/CD Pipeline -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">CI/CD Pipeline</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="codecommit-devops">
+                            <div class="node-content">
+                                <span class="node-icon">📝</span>
+                                <span class="node-title">CodeCommit</span>
+                                <span class="node-subtitle">Source Control</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="codebuild-devops">
+                            <div class="node-content">
+                                <span class="node-icon">🔨</span>
+                                <span class="node-title">CodeBuild</span>
+                                <span class="node-subtitle">Build & Test</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="codedeploy-devops">
+                            <div class="node-content">
+                                <span class="node-icon">🚀</span>
+                                <span class="node-title">CodeDeploy</span>
+                                <span class="node-subtitle">Deployment</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="codepipeline-devops">
+                            <div class="node-content">
+                                <span class="node-icon">🔄</span>
+                                <span class="node-title">CodePipeline</span>
+                                <span class="node-subtitle">Orchestration</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Container Orchestration -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Container Orchestration</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="docker">
+                            <div class="node-content">
+                                <span class="node-icon">🐳</span>
+                                <span class="node-title">Docker</span>
+                                <span class="node-subtitle">Containerization</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="ecs-devops">
+                            <div class="node-content">
+                                <span class="node-icon">📦</span>
+                                <span class="node-title">ECS</span>
+                                <span class="node-subtitle">Container Service</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="eks-devops">
+                            <div class="node-content">
+                                <span class="node-icon">☸️</span>
+                                <span class="node-title">EKS</span>
+                                <span class="node-subtitle">Kubernetes</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="fargate">
+                            <div class="node-content">
+                                <span class="node-icon">⚡</span>
+                                <span class="node-title">Fargate</span>
+                                <span class="node-subtitle">Serverless Containers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Monitoring & Logging -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Monitoring & Logging</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="cloudwatch-devops">
+                            <div class="node-content">
+                                <span class="node-icon">📊</span>
+                                <span class="node-title">CloudWatch</span>
+                                <span class="node-subtitle">Metrics & Alarms</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="cloudtrail">
+                            <div class="node-content">
+                                <span class="node-icon">👣</span>
+                                <span class="node-title">CloudTrail</span>
+                                <span class="node-subtitle">Audit Logging</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="elasticsearch">
+                            <div class="node-content">
+                                <span class="node-icon">🔍</span>
+                                <span class="node-title">OpenSearch</span>
+                                <span class="node-subtitle">Log Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Security & Compliance -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Security & Compliance</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="config">
+                            <div class="node-content">
+                                <span class="node-icon">⚙️</span>
+                                <span class="node-title">AWS Config</span>
+                                <span class="node-subtitle">Compliance</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="guardduty">
+                            <div class="node-content">
+                                <span class="node-icon">🛡️</span>
+                                <span class="node-title">GuardDuty</span>
+                                <span class="node-subtitle">Threat Detection</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="inspector">
+                            <div class="node-content">
+                                <span class="node-icon">🔍</span>
+                                <span class="node-title">Inspector</span>
+                                <span class="node-subtitle">Vulnerability Assessment</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cost Optimization -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Cost Optimization</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="cost-explorer">
+                            <div class="node-content">
+                                <span class="node-icon">💰</span>
+                                <span class="node-title">Cost Explorer</span>
+                                <span class="node-subtitle">Cost Analysis</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="trusted-advisor">
+                            <div class="node-content">
+                                <span class="node-icon">💡</span>
+                                <span class="node-title">Trusted Advisor</span>
+                                <span class="node-subtitle">Recommendations</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="budgets">
+                            <div class="node-content">
+                                <span class="node-icon">📊</span>
+                                <span class="node-title">AWS Budgets</span>
+                                <span class="node-subtitle">Cost Control</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Topics -->
+                <div class="roadmap-section">
+                    <h3 class="section-title">Advanced Topics</h3>
+                    <div class="nodes-row">
+                        <div class="roadmap-node" data-topic="service-mesh">
+                            <div class="node-content">
+                                <span class="node-icon">🕸️</span>
+                                <span class="node-title">App Mesh</span>
+                                <span class="node-subtitle">Service Mesh</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="chaos-engineering">
+                            <div class="node-content">
+                                <span class="node-icon">🌪️</span>
+                                <span class="node-title">Chaos Engineering</span>
+                                <span class="node-subtitle">Resilience Testing</span>
+                            </div>
+                        </div>
+                        <div class="roadmap-node" data-topic="multi-account">
+                            <div class="node-content">
+                                <span class="node-icon">🏢</span>
+                                <span class="node-title">Organizations</span>
+                                <span class="node-subtitle">Multi-Account</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification -->
+                <div class="roadmap-node certification-node" data-topic="dop-cert">
+                    <div class="node-content">
+                        <span class="node-icon">🏆</span>
+                        <span class="node-title">DevOps Engineer Professional</span>
+                        <span class="node-subtitle">AWS Certification</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Topic Modal -->
+    <div class="topic-modal" id="topicModal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-header">
+                <span class="modal-icon"></span>
+                <h3 class="modal-title"></h3>
+            </div>
+            <div class="modal-body">
+                <p class="modal-description"></p>
+                <div class="modal-actions">
+                    <a href="#" class="action-btn learn-btn">📖 Learn More</a>
+                    <a href="#" class="action-btn quiz-btn">🧠 Take Quiz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with ❤️ for the AWS community by <a href="https://beacons.ai/delia.data" target="_blank" rel="noopener noreferrer">Delia Ayoko</a> ...with <a href="https://aws.amazon.com/q/developer/" target="_blank" rel="noopener noreferrer">Amazon Q CLI</a></p>
+    </footer>
+
+    <script src="roadmaps.js"></script>
+</body>
+</html>

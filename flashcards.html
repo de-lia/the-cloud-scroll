@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlashCards - The Cloud Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="logo-cloud">☁️</span>
+                        <span class="logo-scroll">📜</span>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">The Cloud Scroll</span>
+                        <span class="logo-sub">AWS Learning</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dictionary.html" class="nav-link">Dictionary</a>
+                </li>
+                <li class="nav-item">
+                    <a href="flashcards.html" class="nav-link active">FlashCards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html" class="nav-link">Test Your Cloud Quotient</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmaps.html" class="nav-link">Roadmaps</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <h1>AWS FlashCards</h1>
+            <p>Master AWS concepts through interactive study cards</p>
+        </header>
+
+        <!-- Category Selection -->
+        <div class="flashcard-setup" id="setupSection">
+            <div class="setup-card">
+                <h2>Choose Your Study Category</h2>
+                <p>Select a category to focus your learning, or choose "All Categories" for a comprehensive mix</p>
+                
+                <div class="category-selection">
+                    <button class="setup-category-btn" data-category="all">
+                        <div class="category-icon">🌐</div>
+                        <div class="category-info">
+                            <h3>All Categories</h3>
+                            <p>Mixed cards from all AWS services</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="compute">
+                        <div class="category-icon">💻</div>
+                        <div class="category-info">
+                            <h3>Compute</h3>
+                            <p>EC2, Lambda, ECS, EKS, Fargate</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="storage">
+                        <div class="category-icon">💾</div>
+                        <div class="category-info">
+                            <h3>Storage</h3>
+                            <p>S3, EBS, EFS, Glacier</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="networking">
+                        <div class="category-icon">🌐</div>
+                        <div class="category-info">
+                            <h3>Networking</h3>
+                            <p>VPC, CloudFront, Route 53, Load Balancers</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="database">
+                        <div class="category-icon">🗄️</div>
+                        <div class="category-info">
+                            <h3>Database</h3>
+                            <p>RDS, DynamoDB, Aurora, Redshift</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="security">
+                        <div class="category-icon">🔒</div>
+                        <div class="category-info">
+                            <h3>Security</h3>
+                            <p>IAM, Cognito, KMS, WAF</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="analytics">
+                        <div class="category-icon">📊</div>
+                        <div class="category-info">
+                            <h3>Analytics</h3>
+                            <p>Kinesis, EMR, Athena, Redshift</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="ml">
+                        <div class="category-icon">🤖</div>
+                        <div class="category-info">
+                            <h3>Machine Learning</h3>
+                            <p>SageMaker, Rekognition, Comprehend</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="serverless">
+                        <div class="category-icon">⚡</div>
+                        <div class="category-info">
+                            <h3>Serverless</h3>
+                            <p>Lambda, API Gateway, Step Functions</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flashcard Game -->
+        <div class="flashcard-game" id="gameSection" style="display: none;">
+            <div class="game-header">
+                <div class="game-info">
+                    <span class="current-category" id="currentCategory">All Categories</span>
+                    <div class="progress-info">
+                        <span id="currentCard">1</span> / <span id="totalCards">30</span>
+                    </div>
+                </div>
+                <div class="game-controls">
+                    <button class="control-btn" id="shuffleBtn">🔀 Shuffle</button>
+                    <button class="control-btn" id="newCategoryBtn">📂 Change Category</button>
+                </div>
+            </div>
+
+            <div class="flashcard-container">
+                <div class="flashcard" id="flashcard">
+                    <div class="flashcard-inner">
+                        <div class="flashcard-front">
+                            <div class="card-header">
+                                <span class="card-category" id="cardCategory">Compute</span>
+                                <span class="flip-hint">Click to reveal definition</span>
+                            </div>
+                            <div class="card-content">
+                                <h2 id="cardTerm">EC2</h2>
+                            </div>
+                        </div>
+                        <div class="flashcard-back">
+                            <div class="card-header">
+                                <span class="card-category" id="cardCategoryBack">Compute</span>
+                                <span class="flip-hint">Click to see term</span>
+                            </div>
+                            <div class="card-content">
+                                <p id="cardDefinition">Think of EC2 as renting a computer in the cloud...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navigation-controls">
+                <button class="nav-btn" id="prevBtn">← Previous</button>
+                <div class="difficulty-buttons">
+                    <button class="difficulty-btn easy" id="easyBtn">😊 Easy</button>
+                    <button class="difficulty-btn medium" id="mediumBtn">🤔 Medium</button>
+                    <button class="difficulty-btn hard" id="hardBtn">😅 Hard</button>
+                </div>
+                <button class="nav-btn" id="nextBtn">Next →</button>
+            </div>
+
+            <div class="study-stats">
+                <div class="stat-item">
+                    <span class="stat-label">Cards Studied</span>
+                    <span class="stat-value" id="studiedCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Easy</span>
+                    <span class="stat-value easy" id="easyCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Medium</span>
+                    <span class="stat-value medium" id="mediumCount">0</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Hard</span>
+                    <span class="stat-value hard" id="hardCount">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Completion Screen -->
+        <div class="completion-screen" id="completionSection" style="display: none;">
+            <div class="completion-card">
+                <div class="completion-icon">🎉</div>
+                <h2>Congratulations!</h2>
+                <p>You've completed all flashcards in this category</p>
+                
+                <div class="final-stats">
+                    <div class="final-stat">
+                        <span class="final-stat-number" id="finalStudied">0</span>
+                        <span class="final-stat-label">Cards Studied</span>
+                    </div>
+                    <div class="final-stat">
+                        <span class="final-stat-number easy" id="finalEasy">0</span>
+                        <span class="final-stat-label">Easy</span>
+                    </div>
+                    <div class="final-stat">
+                        <span class="final-stat-number medium" id="finalMedium">0</span>
+                        <span class="final-stat-label">Medium</span>
+                    </div>
+                    <div class="final-stat">
+                        <span class="final-stat-number hard" id="finalHard">0</span>
+                        <span class="final-stat-label">Hard</span>
+                    </div>
+                </div>
+
+                <div class="completion-actions">
+                    <button class="btn btn-primary" id="studyAgainBtn">Study Again</button>
+                    <button class="btn btn-secondary" id="newCategoryCompletionBtn">Try New Category</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with ❤️ for the AWS community by <a href="https://beacons.ai/delia.data" target="_blank" rel="noopener noreferrer">Delia Ayoko</a> ...with <a href="https://aws.amazon.com/q/developer/" target="_blank" rel="noopener noreferrer">Amazon Q CLI</a></p>
+    </footer>
+
+    <script src="navigation.js"></script>
+    <script src="flashcards.js"></script>
+</body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Your Cloud Quotient - The Cloud Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="logo-cloud">☁️</span>
+                        <span class="logo-scroll">📜</span>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">The Cloud Scroll</span>
+                        <span class="logo-sub">AWS Learning</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dictionary.html" class="nav-link">Dictionary</a>
+                </li>
+                <li class="nav-item">
+                    <a href="flashcards.html" class="nav-link">FlashCards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html" class="nav-link active">Test Your Cloud Quotient</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmaps.html" class="nav-link">Roadmaps</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <h1>Test Your Cloud Quotient</h1>
+            <p>Measure your AWS knowledge with real-world scenario questions</p>
+        </header>
+
+        <!-- Quiz Setup -->
+        <div class="quiz-setup" id="setupSection">
+            <div class="setup-card">
+                <div class="cq-intro">
+                    <h2>What is Cloud Quotient (CQ)?</h2>
+                    <p>Cloud Quotient is a standardized measure of your AWS cloud computing knowledge and problem-solving ability. Just like IQ measures general intelligence, CQ measures your cloud intelligence through real-world scenarios and technical challenges.</p>
+                    
+                    <div class="cq-features">
+                        <div class="cq-feature">
+                            <span class="feature-icon">🎯</span>
+                            <span>Real-world scenarios</span>
+                        </div>
+                        <div class="cq-feature">
+                            <span class="feature-icon">⏱️</span>
+                            <span>Timed assessment</span>
+                        </div>
+                        <div class="cq-feature">
+                            <span class="feature-icon">📊</span>
+                            <span>Standardized scoring</span>
+                        </div>
+                        <div class="cq-feature">
+                            <span class="feature-icon">🏆</span>
+                            <span>Professional insights</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3>Choose Your Assessment Category</h3>
+                <p>Select a specific AWS domain or take the comprehensive assessment</p>
+                
+                <div class="category-selection">
+                    <button class="setup-category-btn" data-category="all">
+                        <div class="category-icon">🌐</div>
+                        <div class="category-info">
+                            <h3>Comprehensive Assessment</h3>
+                            <p>25 questions • 35 minutes • All AWS domains</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="compute">
+                        <div class="category-icon">💻</div>
+                        <div class="category-info">
+                            <h3>Compute Mastery</h3>
+                            <p>15 questions • 20 minutes • EC2, Lambda, Containers</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="storage">
+                        <div class="category-icon">💾</div>
+                        <div class="category-info">
+                            <h3>Storage Solutions</h3>
+                            <p>15 questions • 20 minutes • S3, EBS, EFS, Glacier</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="networking">
+                        <div class="category-icon">🌐</div>
+                        <div class="category-info">
+                            <h3>Networking & CDN</h3>
+                            <p>15 questions • 20 minutes • VPC, CloudFront, Load Balancing</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="database">
+                        <div class="category-icon">🗄️</div>
+                        <div class="category-info">
+                            <h3>Database Systems</h3>
+                            <p>15 questions • 20 minutes • RDS, DynamoDB, Analytics</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="security">
+                        <div class="category-icon">🔒</div>
+                        <div class="category-info">
+                            <h3>Security & Identity</h3>
+                            <p>15 questions • 20 minutes • IAM, Encryption, Compliance</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="ml">
+                        <div class="category-icon">🤖</div>
+                        <div class="category-info">
+                            <h3>Machine Learning</h3>
+                            <p>15 questions • 20 minutes • SageMaker, Rekognition, AI Services</p>
+                        </div>
+                    </button>
+                    
+                    <button class="setup-category-btn" data-category="serverless">
+                        <div class="category-icon">⚡</div>
+                        <div class="category-info">
+                            <h3>Serverless Architecture</h3>
+                            <p>15 questions • 20 minutes • Lambda, API Gateway, Event-driven</p>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Instructions -->
+        <div class="quiz-instructions" id="instructionsSection" style="display: none;">
+            <div class="instructions-card">
+                <h2>Assessment Instructions</h2>
+                <div class="instructions-content">
+                    <div class="instruction-item">
+                        <span class="instruction-icon">⏱️</span>
+                        <div>
+                            <h4>Time Limit</h4>
+                            <p>You have <span id="timeLimit">20 minutes</span> to complete <span id="questionCount">15 questions</span>. The timer starts when you begin.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-item">
+                        <span class="instruction-icon">🎯</span>
+                        <div>
+                            <h4>Question Format</h4>
+                            <p>Each question presents a real-world scenario with multiple choice answers. Choose the best solution.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-item">
+                        <span class="instruction-icon">⚠️</span>
+                        <div>
+                            <h4>No Going Back</h4>
+                            <p>Once you answer a question, you cannot return to change it. Think carefully before submitting.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="instruction-item">
+                        <span class="instruction-icon">📊</span>
+                        <div>
+                            <h4>Scoring</h4>
+                            <p>Your Cloud Quotient (CQ) will be calculated based on accuracy and question difficulty. Results are provided immediately.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="instructions-actions">
+                    <button class="btn btn-secondary" id="backToSetupBtn">← Back to Categories</button>
+                    <button class="btn btn-primary" id="startQuizBtn">Start Assessment →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Game -->
+        <div class="quiz-game" id="gameSection" style="display: none;">
+            <div class="quiz-header">
+                <div class="quiz-progress">
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progressFill"></div>
+                    </div>
+                    <span class="progress-text">Question <span id="currentQuestion">1</span> of <span id="totalQuestions">15</span></span>
+                </div>
+                
+                <div class="quiz-timer">
+                    <span class="timer-icon">⏱️</span>
+                    <span id="timeRemaining">20:00</span>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-card">
+                    <div class="question-difficulty" id="questionDifficulty">Medium</div>
+                    <h3 class="question-text" id="questionText">Loading question...</h3>
+                    
+                    <div class="answer-options" id="answerOptions">
+                        <!-- Options will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="quiz-controls">
+                <button class="btn btn-secondary" id="quitQuizBtn">Quit Assessment</button>
+                <button class="btn btn-primary" id="submitAnswerBtn" disabled>Submit Answer</button>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div class="quiz-results" id="resultsSection" style="display: none;">
+            <div class="results-card">
+                <div class="cq-score-display">
+                    <div class="score-circle">
+                        <div class="score-number" id="cqScore">0</div>
+                        <div class="score-label">CQ</div>
+                    </div>
+                    <h2 class="score-title" id="scoreTitle">Cloud Practitioner</h2>
+                    <p class="score-description" id="scoreDescription">You have a good foundational understanding of AWS services.</p>
+                </div>
+
+                <div class="results-breakdown">
+                    <h3>Assessment Breakdown</h3>
+                    <div class="breakdown-stats">
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Questions Answered</span>
+                            <span class="breakdown-value" id="questionsAnswered">0/15</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Accuracy Rate</span>
+                            <span class="breakdown-value" id="accuracyRate">0%</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Time Taken</span>
+                            <span class="breakdown-value" id="timeTaken">0:00</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Category</span>
+                            <span class="breakdown-value" id="resultCategory">All Categories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="btn btn-secondary" id="retakeQuizBtn">Retake Assessment</button>
+                    <button class="btn btn-primary" id="newCategoryQuizBtn">Try Different Category</button>
+                </div>
+
+                <div class="results-share">
+                    <p>Share your Cloud Quotient:</p>
+                    <button class="btn btn-outline" id="shareResultsBtn">📋 Copy Results</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with ❤️ for the AWS community by <a href="https://beacons.ai/delia.data" target="_blank" rel="noopener noreferrer">Delia Ayoko</a> ...with <a href="https://aws.amazon.com/q/developer/" target="_blank" rel="noopener noreferrer">Amazon Q CLI</a></p>
+    </footer>
+
+    <script src="navigation.js"></script>
+    <script src="quiz.js"></script>
+</body>
+</html>

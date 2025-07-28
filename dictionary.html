@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dictionary - The Cloud Scroll</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="home.html" class="logo">
+                    <div class="logo-icon">
+                        <span class="logo-cloud">☁️</span>
+                        <span class="logo-scroll">📜</span>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">The Cloud Scroll</span>
+                        <span class="logo-sub">AWS Learning</span>
+                    </div>
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="home.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dictionary.html" class="nav-link active">Dictionary</a>
+                </li>
+                <li class="nav-item">
+                    <a href="flashcards.html" class="nav-link">FlashCards</a>
+                </li>
+                <li class="nav-item">
+                    <a href="quiz.html" class="nav-link">Test Your Cloud Quotient</a>
+                </li>
+                <li class="nav-item">
+                    <a href="roadmaps.html" class="nav-link">Roadmaps</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <header class="page-header">
+            <h1>AWS Dictionary</h1>
+            <p>Your go-to resource for AWS terminology and definitions</p>
+        </header>
+
+        <div class="search-section">
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search for AWS terms..." autocomplete="off">
+                <button id="searchBtn">Search</button>
+            </div>
+            
+            <div class="category-filters">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="compute">Compute</button>
+                <button class="category-btn" data-category="storage">Storage</button>
+                <button class="category-btn" data-category="networking">Networking</button>
+                <button class="category-btn" data-category="database">Database</button>
+                <button class="category-btn" data-category="security">Security</button>
+                <button class="category-btn" data-category="analytics">Analytics</button>
+                <button class="category-btn" data-category="ml">Machine Learning</button>
+                <button class="category-btn" data-category="serverless">Serverless</button>
+            </div>
+        </div>
+
+        <div class="results-section">
+            <div id="resultsContainer">
+                <div class="welcome-message">
+                    <h2>Welcome to The Cloud Scroll Dictionary!</h2>
+                    <p>Search for any AWS term or browse by category to get clear, concise definitions.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Created with ❤️ for the AWS community by <a href="https://beacons.ai/delia.data" target="_blank" rel="noopener noreferrer">Delia Ayoko</a> ...with <a href="https://aws.amazon.com/q/developer/" target="_blank" rel="noopener noreferrer">Amazon Q CLI</a></p>
+    </footer>
+
+    <script src="navigation.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
